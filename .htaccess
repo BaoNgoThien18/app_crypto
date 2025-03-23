@@ -1,0 +1,57 @@
+RewriteEngine On
+
+RewriteRule ^Register$ public/client/Register.php [L]
+RewriteRule ^Login$ public/client/Login.php [L]
+RewriteRule ^Logout$ public/client/Logout.php [L]
+RewriteRule ^ForgotPassword$ public/client/ForgotPassword.php [L]
+RewriteRule ^VerifyAccount$ public/client/VerifyAccount.php [L]
+
+
+RewriteRule ^Privacy$ public/client/Home/Privacy.php [L]
+RewriteRule ^Term$ public/client/Home/Term.php [L]
+RewriteRule ^Contributor$ public/client/Home/Contributor.php [L]
+RewriteRule ^Sitemap$ public/client/Home/Sitemap.php [L]
+
+RewriteRule ^About$ public/client/Home/About.php [L]
+RewriteRule ^Sercurity$ public/client/Home/Sercurity.php [L]
+
+
+RewriteRule ^Home$ public/client/Home.php [L]
+RewriteRule ^Connect$ public/client/Connect.php [L]
+RewriteRule ^Overview$ public/client/Overview.php [L]
+RewriteRule ^Profile$ public/client/Profile.php [L]
+RewriteRule ^Settings$ public/client/Settings.php [L]
+RewriteRule ^Send/([A-Za-z0-9-]+)$ public/client/Send.php?id=$1 [L]
+RewriteRule ^Swap/([A-Za-z0-9-]+)$ public/client/Swap.php?id=$1 [L]
+RewriteRule ^Receive/([A-Za-z0-9-]+)$ public/client/Receive.php?id=$1 [L]
+RewriteRule ^Coin/([A-Za-z0-9-]+) public/client/Coin.php?id=$1 [L]
+RewriteRule ^Transaction/([A-Za-z0-9-]+) public/client/Transaction.php?id=$1 [L]
+
+
+
+
+
+
+RewriteRule ^Admin$ public/admin/Home.php [L]
+RewriteRule ^Admin/$ public/admin/Home.php [L]
+RewriteRule ^Admin/Home$ public/admin/Home.php [L]
+RewriteRule ^Admin/ChuyenTien$ public/admin/ChuyenTien.php [L]
+RewriteRule ^Admin/Users$ public/admin/Users.php [L]
+RewriteRule ^Admin/HistoryBuyCode$ public/admin/HistoryBuyCode.php [L]
+RewriteRule ^Admin/HistoryTaoWeb$ public/admin/HistoryTaoWeb.php [L]
+
+RewriteRule ^Admin/GiaoDich/Edit/([A-Za-z0-9-]+) public/admin/EditGiaoDich.php?id=$1 [L]
+RewriteRule ^Admin/User/Edit/([A-Za-z0-9-]+) public/admin/EditUser.php?id=$1 [L]
+RewriteRule ^Admin/HistoryTaoWeb/Edit/([A-Za-z0-9-]+) public/admin/EditHistoryTaoWeb.php?id=$1 [L]
+
+RewriteRule ^Admin/Setting$ public/admin/Setting.php [L]
+RewriteRule ^Admin/Cards$ public/admin/Cards.php [L]
+RewriteRule ^Admin/Bank$ public/admin/Bank.php [L]
+RewriteRule ^Admin/TaoGiaoDich$ public/admin/TaoGiaoDich.php [L]
+RewriteRule ^Admin/Product/Edit/([A-Za-z0-9-]+) public/admin/EditProduct.php?id=$1 [L]
+RewriteRule ^Admin/Product/([A-Za-z0-9-]+) public/admin/Product.php?id=$1 [L]
+RewriteRule ^Admin/Storage$ public/admin/Storage.php [L]
+
+
+# RewriteCond %{HTTPS} off
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
